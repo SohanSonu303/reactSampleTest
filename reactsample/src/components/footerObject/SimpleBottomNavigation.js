@@ -31,7 +31,7 @@ function SimpleBottomNavigation() {
           setValue(newValue);
         }}
         sx={{
-          backgroundColor: '#1e293b',
+          backgroundColor: '#87253b',
           height: '2rem',
           borderTopLeftRadius: '10px',
           borderTopRightRadius: '10px',
