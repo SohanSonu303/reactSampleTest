@@ -11,7 +11,7 @@ function CenterComponent(){
                 </p>
             </div>
             <div className='imageBodyDiv'>
-                 <img className='bodyimage' src= '/tinkuanna pic2.png' alt='HeaderImage'></img>
+                 <img className='bodyimage' src= '/tinkuannapic2.png' alt='HeaderImage'></img>
             </div>
         </section>
      );
