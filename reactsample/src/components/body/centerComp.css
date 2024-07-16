@@ -1,0 +1,36 @@
+.paragraph{
+    color: aliceblue;
+    font-size: var(--size-4xl);
+    
+}
+
+
+.body_section{
+    padding-top: 5%;
+    height: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bodyimage{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    max-height: 35rem;
+    max-width: 35rem;
+}
+
+.paraDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.imageBodyDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
