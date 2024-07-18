@@ -10,15 +10,45 @@
   opacity: 0.8;
 } */
 
-.appFooter{
+/* .appFooter{
   display: flex;
-  justify-content:space-evenly;
-  position: fixed; /* Stick to the bottom of the viewport */
+  justify-content:flex-end;
+  position: fixed;
   width: 100%;
-  bottom: 0;
-  margin-bottom: 1rem;
+  top: 10%;
+  margin-bottom: 1rem ;
+  padding-right: 1rem;
+} */
+
+.appFooter{
+  position:fixed;
+  right: 0;
+  top: 15%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .paragraphApp{
   color: var(--clr-rose);
+}
+
+.svgSideIcon{
+    position:fixed;
+    right: 0;
+    top:10%;
+    cursor: pointer;
+    background-color: #34353a;
+    border: none;
+  color: white;
+  padding: 10px 30px;
+
+  svg {
+    width: 36px;
+    height: 36px;
+    fill: rgb(34, 203, 219);
+  }
+}
+
+.sideIconSection:hover  .appFooter{
+  opacity: 1;
 }

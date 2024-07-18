@@ -23,7 +23,7 @@ function SimpleBottomNavigation() {
   };
 
   return (
-    <Box sx={{ width: 500 }}>
+    <Box sx={{ width: "auto" }}>
       <BottomNavigation
         showLabels
         value={value}
@@ -32,12 +32,15 @@ function SimpleBottomNavigation() {
         }}
         sx={{
           backgroundColor: '#87253b',
-          height: '2rem',
+          height: '30%',
           borderTopLeftRadius: '10px',
           borderTopRightRadius: '10px',
           borderBottomRightRadius: '10px',
           borderBottomLeftRadius: '10px',
           padding: '0.3rem 0.3rem',
+          display: 'flex',
+          flexDirection : 'column',
+          gap:'0.5rem',
         }}
       >
         <BottomNavigationAction
@@ -45,8 +48,8 @@ function SimpleBottomNavigation() {
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="64"
-              height="64"
+              width="1.5rem"
+              height="1.5rem"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
               image-rendering="optimizeQuality"
@@ -64,6 +67,8 @@ function SimpleBottomNavigation() {
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              width="1.5rem"
+              height="1.5rem"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
               image-rendering="optimizeQuality"
@@ -84,6 +89,8 @@ function SimpleBottomNavigation() {
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              width="1.5rem"
+              height="1.5rem"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
               image-rendering="optimizeQuality"
