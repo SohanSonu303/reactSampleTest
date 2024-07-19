@@ -1,0 +1,96 @@
+.paragraph{
+    color: aliceblue;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: var(--size-4xl);
+    
+}
+
+
+.body_section{
+    padding-top: 5%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    border-bottom-color: azure;
+}
+
+.bodyimage{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    max-height: 40rem;
+    max-width: 40rem;
+    opacity: 0.6;
+}
+
+.paraDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.imageBodyDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.body__aboutSection{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.body__paraTag{
+    font-size:xx-large;
+    color: aliceblue;
+}
+
+.divBorder{
+    padding-top: 3rem;
+    opacity: 0.2;
+    border-bottom: 2px solid rgb(255, 255, 255); 
+    margin-top: 5rem;
+}
+
+.projectDesc{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projectDesc1 {
+    display: flex;
+    justify-content:space-around;
+    padding: 5%;
+}
+
+.projectDesc2 {
+    display: flex;
+    justify-content:space-around;
+    gap: 1rem;
+    padding: 5%;
+}
+
+.body__paraTagDesc{
+    font-size:x-large;
+    color: aliceblue;
+}
+
+.bodyimageDesc{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    max-height: 30rem;
+    max-width: 30rem;
+    opacity: 0.6;
+}
