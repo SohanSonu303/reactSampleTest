@@ -1,0 +1,91 @@
+
+.gallery-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%; /* Adjust as needed */
+    max-width: 100%; /* Adjust as needed */
+}
+
+.media-scroller {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    /* background: rgba(162, 25, 25, 0.1); */
+    background: #ffc86b;
+    backdrop-filter: blur(5px); /* Glass effect */
+    border-radius: 5px; /* Optional: Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.555);
+}
+
+.media-scroller::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.media-scroller img {
+    inline-size: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    flex-shrink: 0;
+    height: 200px; /* Ensure a consistent height */
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+}
+
+.media-scroller img:hover {
+    transform: scale(1.1);
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 25px; /* Increase padding for larger size */
+    cursor: pointer;
+    z-index: 10;
+    backdrop-filter: blur();
+    user-select: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 7rem; /* Increase font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-button.left {
+    left: 10px;
+}
+
+.scroll-button.right {
+    right: 10px;
+}
+
+
+.scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Add the effect of the button clicking using CSS animation */
+.scroll-button:active {
+    animation: clickAnimation 0.3s ease;
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: translateY(-50%) scale(1);
+    }
+    50% {
+        transform: translateY(-50%) scale(0.95);
+    }
+    100% {
+        transform: translateY(-50%) scale(1);
+    }
+}

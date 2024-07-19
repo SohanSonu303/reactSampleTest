@@ -10,22 +10,13 @@
   opacity: 0.8;
 } */
 
-/* .appFooter{
-  display: flex;
-  justify-content:flex-end;
-  position: fixed;
-  width: 100%;
-  top: 10%;
-  margin-bottom: 1rem ;
-  padding-right: 1rem;
-} */
-
 .appFooter{
   position:fixed;
   right: 0;
   top: 15%;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
 
 .paragraphApp{
@@ -51,4 +42,19 @@
 
 .sideIconSection:hover  .appFooter{
   opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.sideIconSection:not(:hover) .appFooter {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out 1s, visibility 1s ease-in-out 1s;
+}
+
+.imageGalleryContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }

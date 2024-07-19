@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './centerComp.css'
 import { colors } from '@mui/material';
 
 function CenterComponent(){
+
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setImageLoaded(true);
+      }, 1000); // Match this with the image animation duration
+      return () => clearTimeout(timer);
+    }, []);
+
      return(
         <div className='body__MainSection'>
             <div className='body_section'>
@@ -15,7 +25,7 @@ function CenterComponent(){
                     <img className='bodyimage' src= '/tinkuannapic2copy.png' alt='HeaderImage'></img>
                 </div>
             </div>
-            <div className="divBorder">
+                <div className="divBorder">
             </div>
 
             <div className='body__aboutSection'>
@@ -25,6 +35,23 @@ function CenterComponent(){
                     <br></br>My passion for sustainable and functional architecture drives me to deliver projects that not only meet but exceed client expectations.</p>
             </div>
 
+            <div className='bodyAnimationSec'>
+                <img className='bodyimage' src= '/homepic4.jpg' alt='HeaderImage' 
+                onLoad={() => setImageLoaded(true)}
+                style={{ width: '100%', height: 'auto' }}
+                ></img>
+                <div className={`p-tags ${imageLoaded ? 'visible' : ''}`}>
+                    <p>"The essence of architecture is in its continual evolution. <br></br>Rather than starting anew, you can collaborate with us to transform your vision into a sophisticated and refined reality."</p>
+                </div>
+            </div>
+
+            <div className='biggertextSec'>
+                <p className="autoBlur p-tag-1">Innovative</p>
+                <p className="autoBlur p-tag-2">Personalized</p>
+                <p className="autoBlur p-tag-3">Limitless</p>
+                <p className="autoBlur p-tag-4">Discover</p>
+                <p className="autoBlur p-tag-5">Pioneering</p>
+            </div>
             <div className='projectDesc'>
                 <div className='projectDesc1'>
                     <p className='body__paraTagDesc'>
