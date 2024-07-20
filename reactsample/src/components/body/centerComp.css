@@ -93,34 +93,45 @@
     max-height: 35rem;
     max-width: 35rem;
     opacity: 0.6;
-    animation: autoShowAnimation both;
-    animation-timeline: view(80% 10%);
 }
 
 
-.bodyAnimationSec{
+.bodyAnimationSec {
     display: flex;
-    align-content:space-evenly;
+    align-content: space-evenly;
     gap: 3rem;
     justify-content: center;
     width: 80%;
-    animation: autoShowAnimation both;
-    animation-timeline: view(80% 10%);
+    opacity: 0; /* Start hidden */
+    transform: translateY(150px); /* Start below */
+    transition: opacity 3s ease-in-out, transform 3s ease-in-out;
 }
 
-.bodyimage{
-    max-height: 35rem;
-    max-width: 35rem;
+.bodyAnimationSec.visible {
+    display: flex;
+    align-content: space-evenly;
+    gap: 3rem;
+    opacity: 1;
+    transform: translateY(0);
 }
-@keyframes autoShowAnimation {
-    from{
-        opacity : 0;
-        transform: translateY(200px) scale(0.3);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+
+.bodyimageAni{
+    opacity: 0; /* Start hidden */
+    transform: scale(0.95); /* Start scaled down */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    max-height: 30rem;
+    max-width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyimageAni.visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: scale(1); /* Scale to original size */
 }
 
 .p-tags {
@@ -129,13 +140,16 @@
     opacity: 0; /* Start hidden */
     transform: translateY(50px); /* Start below */
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .p-tags.visible {
     opacity: 1;
     transform: translateY(0);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
+    font-size: Xx-large;
     color: #b21f48;
     display: flex;
     justify-content: center;
@@ -161,6 +175,8 @@
     animation: autoBlurAni linear both;
     animation-timeline:  view();
 }
+
+
 
 @keyframes autoBlurAni {
     0%{

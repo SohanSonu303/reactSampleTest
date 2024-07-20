@@ -1,16 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './centerComp.css'
 import { colors } from '@mui/material';
 
 function CenterComponent(){
 
-    const [imageLoaded, setImageLoaded] = useState(false);
+    const animElementRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-      const timer = setTimeout(() => {
-        setImageLoaded(true);
-      }, 1000); // Match this with the image animation duration
-      return () => clearTimeout(timer);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0.1) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false);
+                }
+            });
+        }, {
+            threshold: [0.1, 0.8] // Adjust thresholds as needed
+        });
+
+        if (animElementRef.current) {
+            observer.observe(animElementRef.current);
+        }
+
+        return () => {
+            if (animElementRef.current) {
+                observer.unobserve(animElementRef.current);
+            }
+        };
     }, []);
 
      return(
@@ -35,15 +53,21 @@ function CenterComponent(){
                     <br></br>My passion for sustainable and functional architecture drives me to deliver projects that not only meet but exceed client expectations.</p>
             </div>
 
-            <div className='bodyAnimationSec'>
-                <img className='bodyimage' src= '/homepic4.jpg' alt='HeaderImage' 
-                onLoad={() => setImageLoaded(true)}
-                style={{ width: '100%', height: 'auto' }}
-                ></img>
-                <div className={`p-tags ${imageLoaded ? 'visible' : ''}`}>
-                    <p>"The essence of architecture is in its continual evolution. <br></br>Rather than starting anew, you can collaborate with us to transform your vision into a sophisticated and refined reality."</p>
+                <div className={`bodyAnimationSec ${isVisible ? 'visible' : ''}`}>
+                            <img
+                                className={`bodyimageAni ${isVisible ? 'visible' : ''}`}
+                                src='/homepic4.jpg'
+                                alt='HeaderImage'
+                                onLoad={() => setIsVisible(true)}
+                                style={{ width: '100%', height: 'auto' }}
+                            />
+                            <div className={`p-tags ${isVisible ? 'visible' : ''}`} ref={animElementRef}>
+                                <p>
+                                    "The essence of architecture is in its continual evolution. <br />
+                                    Rather than starting anew, you can collaborate with us to transform your <br></br><strong style={{color:"#22cbdb"}}>vision</strong> into a <strong style={{color:"#22cbdb"}}>sophisticated</strong> and refined <strong style={{color:"#22cbdb"}}>reality</strong>."
+                                </p>
+                            </div>
                 </div>
-            </div>
 
             <div className='biggertextSec'>
                 <p className="autoBlur p-tag-1">Innovative</p>
