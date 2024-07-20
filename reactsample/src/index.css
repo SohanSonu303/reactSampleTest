@@ -46,14 +46,6 @@ code {
     monospace;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-
 .loading {
   filter: blur(40px) grayscale(100%);
 }
@@ -63,6 +55,23 @@ code {
   transition: 0.7s ease-in-out;
 }
 
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 420px) {
+  .container {
+    max-width: 420px;
+  }
+}
 /* xs */
 @media (min-width: 475px) {
   .container {
@@ -106,5 +115,19 @@ code {
 @media (min-width: 1536px) {
   .container {
     max-width: 100%;
+  }
+}
+
+/* 3xl */
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1800px;
+  }
+}
+
+/* 4xl */
+@media (min-width: 2100px) {
+  .container {
+    max-width: 2100px;
   }
 }

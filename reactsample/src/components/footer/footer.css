@@ -2,16 +2,280 @@
     margin-top: 10rem;
     background-color: black;
     display: flex;
-    justify-content: center;
-    padding: 4rem;
-    align-content: space-around;
+    justify-content:space-evenly;
+    align-content:center;
 }
 
 .aniamtionFooter{
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
-    gap: 2rem;
 }
+
+.footLogoName{color:#d0c7c7; 
+    font-family:sans-serif; font-size:1.5rem}
+
+.footerptag{
+    color:#d0c7c7;
+    font-family:sans-serif; 
+    font-size:1rem;
+}
+
+.footerContact{
+    color:#d0c7c7;
+    font-family:monospace;
+    font-size:1rem
+}
+
+.footerLogoName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* 320px */
+@media (min-width: 320px) {
+    .footerMainDiv {
+      margin-top: 5rem; /* Reduced margin for smaller screens */
+      padding: 2rem; /* Reduced padding for smaller screens */
+      flex-direction: column; /* Stack content vertically */
+    }
+  
+    .aniamtionFooter {
+      gap: 1rem; /* Reduced gap */
+    }
+  
+    .footLogoName {
+      font-size: 1.2rem; /* Adjusted font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 0.9rem; /* Adjusted font size */
+    }
+  
+    .footerLogoName {
+      font-size: 1.2rem; /* Adjusted font size */
+    }
+  }
+  
+  /* 375px */
+  @media (min-width: 375px) {
+    .footerMainDiv {
+      margin-top: 6rem; /* Adjusted margin for 375px screens */
+      padding: 2.5rem; /* Adjusted padding */
+    }
+  
+    .aniamtionFooter {
+      gap: 1.5rem; /* Adjusted gap */
+    }
+  
+    .footLogoName {
+      font-size: 1.3rem; /* Adjusted font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 1rem; /* Adjusted font size */
+    }
+  
+    .footerLogoName {
+      font-size: 1.3rem; /* Adjusted font size */
+    }
+  }
+  
+  /* 420px */
+  @media (min-width: 420px) {
+    .footerMainDiv {
+      margin-top: 7rem; /* Adjusted margin for 420px screens */
+      padding: 3rem; /* Adjusted padding */
+    }
+  
+    .aniamtionFooter {
+      gap: 1.75rem; /* Adjusted gap */
+    }
+  
+    .footLogoName {
+      font-size: 1.4rem; /* Adjusted font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 1.1rem; /* Adjusted font size */
+    }
+  
+    .footerLogoName {
+      font-size: 1.4rem; /* Adjusted font size */
+    }
+  }
+  
+  /* sm (640px) */
+  @media (min-width: 640px) {
+    .footerMainDiv {
+      margin-top: 8rem; /* Standard margin */
+      padding: 4rem; /* Standard padding */
+      flex-direction: row; /* Horizontal alignment */
+    }
+  
+    .aniamtionFooter {
+      gap: 2rem; /* Standard gap */
+    }
+  
+    .footLogoName {
+      font-size: 1.5rem; /* Standard font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 1.2rem; /* Standard font size */
+    }
+  
+    .footerLogoName {
+      font-size: 1.5rem; /* Standard font size */
+    }
+  }
+  
+  /* md (768px) */
+  @media (min-width: 768px) {
+    .footerMainDiv {
+      margin-top: 9rem; /* Adjusted margin for md screens */
+      padding: 4.5rem; /* Increased padding for md screens */
+    }
+  
+    .aniamtionFooter {
+      gap: 2.25rem; /* Increased gap */
+    }
+  
+    .footLogoName {
+      font-size: 1.6rem; /* Increased font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 1.3rem; /* Increased font size */
+    }
+  
+    .footerLogoName {
+      font-size: 1.6rem; /* Increased font size */
+    }
+  }
+  
+  /* lg (1024px) */
+  @media (min-width: 1024px) {
+    .footerMainDiv {
+      margin-top: 10rem; /* Standard margin */
+      padding: 5rem; /* Increased padding */
+    }
+  
+    .aniamtionFooter {
+      gap: 2.5rem; /* Increased gap */
+    }
+  
+    .footLogoName {
+      font-size: 1.7rem; /* Increased font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 1.4rem; /* Increased font size */
+    }
+  
+    .footerLogoName {
+      font-size: 1.7rem; /* Increased font size */
+    }
+  }
+  
+  /* xl (1280px) */
+  @media (min-width: 1280px) {
+    .footerMainDiv {
+      margin-top: 12rem; /* Increased margin for xl screens */
+      padding: 6rem; /* Increased padding */
+    }
+  
+    .aniamtionFooter {
+      gap: 2.75rem; /* Increased gap */
+    }
+  
+    .footLogoName {
+      font-size: 1.8rem; /* Increased font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 1.5rem; /* Increased font size */
+    }
+  
+    .footerLogoName {
+      font-size: 1.8rem; /* Increased font size */
+    }
+  }
+  
+  /* 2xl (1536px) */
+  @media (min-width: 1536px) {
+    .footerMainDiv {
+      margin-top: 14rem; /* Increased margin for 2xl screens */
+      padding: 7rem; /* Increased padding */
+    }
+  
+    .aniamtionFooter {
+      gap: 3rem; /* Increased gap */
+    }
+  
+    .footLogoName {
+      font-size: 2rem; /* Increased font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 1.6rem; /* Increased font size */
+    }
+  
+    .footerLogoName {
+      font-size: 2rem; /* Increased font size */
+    }
+  }
+  
+  /* 3xl (1920px) */
+  @media (min-width: 1920px) {
+    .footerMainDiv {
+      margin-top: 16rem; /* Increased margin for 3xl screens */
+      padding: 8rem; /* Increased padding */
+    }
+  
+    .aniamtionFooter {
+      gap: 3.25rem; /* Increased gap */
+    }
+  
+    .footLogoName {
+      font-size: 2.2rem; /* Increased font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 1.7rem; /* Increased font size */
+    }
+  
+    .footerLogoName {
+      font-size: 2.2rem; /* Increased font size */
+    }
+  }
+  
+  /* 4xl (2560px) */
+  @media (min-width: 2560px) {
+    .footerMainDiv {
+      margin-top: 18rem; /* Increased margin for 4xl screens */
+      padding: 9rem; /* Increased padding */
+    }
+  
+    .aniamtionFooter {
+      gap: 3.5rem; /* Increased gap */
+    }
+  
+    .footLogoName {
+      font-size: 2.5rem; /* Increased font size */
+    }
+  
+    .footerptag, .footerContact {
+      font-size: 1.8rem; /* Increased font size */
+    }
+  
+    .footerLogoName {
+      font-size: 2.5rem; /* Increased font size */
+    }
+  }
+  

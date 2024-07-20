@@ -11,12 +11,12 @@ const FooterAnimation = () => {
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      backgroundColor: '#34353a', // Optional: Background color
+      backgroundColor: '#000000', // Optional: Background color
     };
 
     const lottieStyle = {
-        width: '4rem', // Adjust size as needed
-        height: '4rem', // Adjust size as needed
+        width: '5rem', // Adjust size as needed
+        height: '5rem', // Adjust size as needed
       };
     
       return (

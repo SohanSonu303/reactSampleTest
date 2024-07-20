@@ -103,8 +103,6 @@ function CenterComponent(){
                     <p className='body__paraTagDesc'>
                     The building showcases a contemporary architectural style with clean lines and a minimalist design.<br></br>
                     The façade is constructed with grey bricks, complemented by large, rectangular windows that allow ample natural light to penetrate the interior.<br></br>
-                    The structure includes modern materials such as metal cladding and wood accents, particularly noticeable in the recessed section under the overhanging roof.<br></br>
-                    The combination of materials and the geometric precision of the design highlight a sophisticated and functional approach to modern architecture.
                     </p>
                     <div>
                         <img src='./belowpic2.jpg' className='bodyimageDesc'>
@@ -120,8 +118,6 @@ function CenterComponent(){
                         <p className='body__paraTagDesc'>
                         The staircase features a sleek and modern design with wooden steps and black metal railings, combining natural elements with industrial materials.<br></br>
                         The vertical light fixtures with wooden bulb casings add a warm ambiance and create an interesting focal point.<br></br>
-                        The surrounding area includes white walls adorned with framed artwork and decorative elements, contributing to a contemporary aesthetic.<br></br>
-                        The open space below the staircase houses a stylish console table with decorative items and a lamp, enhancing the overall appeal of the space.
                         </p>    
                     </div>
                 </div>

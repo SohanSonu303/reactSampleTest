@@ -31,7 +31,7 @@ function App() {
       loading ? <LottieAnimation /> : 
               <div className="App">
                     {/* <img className='background_land' src='/landscape.jpg' alt ="landscape"></img> */}
-                    <section className='container'>
+                    <section>
                       <HeaderNavgation></HeaderNavgation>
                     </section>
                     <section>
@@ -51,7 +51,7 @@ function App() {
                       </section>
                     </section>
 
-                    <footer> 
+                    <footer className='footerSection'> 
                       <Footer></Footer>
                     </footer>
               </div>

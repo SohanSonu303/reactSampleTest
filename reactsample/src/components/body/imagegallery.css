@@ -89,3 +89,216 @@
         transform: translateY(-50%) scale(1);
     }
 }
+
+
+
+/* 320px */
+@media (min-width: 320px) {
+    .gallery-container {
+        width: 90%; /* Standard width for larger screens */
+      }
+    
+      .media-scroller {
+        gap: 6px; /* Larger gap */
+        padding: 10px; /* Larger padding */
+      }
+    
+      .media-scroller img {
+        height: 100px; /* Larger height for sm screens */
+      }
+    
+      .scroll-button {
+        padding: 5px 5px; /* Larger padding for sm screens */
+        font-size: 4rem; /* Larger font size */
+      }
+  }
+  
+  /* 375px */
+  @media (min-width: 375px) {
+    .gallery-container {
+        width: 90%; /* Standard width for larger screens */
+      }
+    
+      .media-scroller {
+        gap: 6px; /* Larger gap */
+        padding: 10px; /* Larger padding */
+      }
+    
+      .media-scroller img {
+        height: 100px; /* Larger height for sm screens */
+      }
+    
+      .scroll-button {
+        padding: 5px 5px; /* Larger padding for sm screens */
+        font-size: 4rem; /* Larger font size */
+      }
+  }
+  
+  /* 420px */
+  @media (min-width: 420px) {
+    .gallery-container {
+        width: 90%; /* Standard width for larger screens */
+      }
+    
+      .media-scroller {
+        gap: 6px; /* Larger gap */
+        padding: 10px; /* Larger padding */
+      }
+    
+      .media-scroller img {
+        height: 100px; /* Larger height for sm screens */
+      }
+    
+      .scroll-button {
+        padding: 5px 5px; /* Larger padding for sm screens */
+        font-size: 4rem; /* Larger font size */
+      }
+  }
+  
+  /* sm (640px) */
+  @media (min-width: 640px) {
+    .gallery-container {
+      width: 90%; /* Standard width for larger screens */
+    }
+  
+    .media-scroller {
+      gap: 6px; /* Larger gap */
+      padding: 10px; /* Larger padding */
+    }
+  
+    .media-scroller img {
+      height: 100px; /* Larger height for sm screens */
+    }
+  
+    .scroll-button {
+      padding: 5px 5px; /* Larger padding for sm screens */
+      font-size: 4rem; /* Larger font size */
+    }
+  }
+  
+  /* md (768px) */
+  @media (min-width: 768px) {
+    .gallery-container {
+        width: 90%; /* Adjust width for lg screens */
+      }
+    
+      .media-scroller {
+        gap: 8px; /* Larger gap for lg screens */
+        padding: 12px; /* Larger padding for lg screens */
+      }
+    
+      .media-scroller img {
+        height: 130px; /* Larger height for lg screens */
+      }
+    
+      .scroll-button {
+        padding: 5px 5px; /* Larger padding for lg screens */
+        font-size: 5rem; /* Larger font size for lg screens */
+      }
+  }
+  
+  /* lg (1024px) */
+  @media (min-width: 1024px) {
+    .gallery-container {
+      width: 90%; /* Adjust width for lg screens */
+    }
+  
+    .media-scroller {
+      gap: 10px; /* Larger gap for lg screens */
+      padding: 15px; /* Larger padding for lg screens */
+    }
+  
+    .media-scroller img {
+      height: 150px; /* Larger height for lg screens */
+    }
+  
+    .scroll-button {
+      padding: 7px 7px; /* Larger padding for lg screens */
+      font-size: 7rem; /* Larger font size for lg screens */
+    }
+  }
+  
+  /* xl (1280px) */
+  @media (min-width: 1280px) {
+    .gallery-container {
+      width: 90%; /* Adjust width for xl screens */
+    }
+  
+    .media-scroller {
+      gap: 25px; /* Larger gap for xl screens */
+      padding: 30px; /* Larger padding for xl screens */
+    }
+  
+    .media-scroller img {
+      height: 130px; /* Larger height for xl screens */
+    }
+  
+    .scroll-button {
+        padding: 7px 7px; /* Larger padding for 4xl screens */
+        font-size: 7rem; /* Larger font size for 4xl screens */
+      }
+  }
+  
+  /* 2xl (1536px) */
+  @media (min-width: 1536px) {
+    .gallery-container {
+        width: 90%; /* Adjust width for 4xl screens */
+      }
+    
+      .media-scroller {
+        gap: 40px; /* Larger gap for 4xl screens */
+        padding: 45px; /* Larger padding for 4xl screens */
+      }
+    
+      .media-scroller img {
+        height: 175px; /* Larger height for 4xl screens */
+      }
+    
+      .scroll-button {
+        padding: 15px 15px; /* Larger padding for 4xl screens */
+        font-size: 7rem; /* Larger font size for 4xl screens */
+      }
+  }
+  
+  /* 3xl (1920px) */
+  @media (min-width: 1920px) {
+    .gallery-container {
+        width: 90%; /* Adjust width for 4xl screens */
+      }
+    
+      .media-scroller {
+        gap: 40px; /* Larger gap for 4xl screens */
+        padding: 45px; /* Larger padding for 4xl screens */
+      }
+    
+      .media-scroller img {
+        height: 175px; /* Larger height for 4xl screens */
+      }
+    
+      .scroll-button {
+        padding: 15px 15px; /* Larger padding for 4xl screens */
+        font-size: 7rem; /* Larger font size for 4xl screens */
+      }
+  }
+  
+  /* 4xl (2560px) */
+  @media (min-width: 2560px) {
+    .gallery-container {
+      width: 90%; /* Adjust width for 4xl screens */
+    }
+  
+    .media-scroller {
+      gap: 40px; /* Larger gap for 4xl screens */
+      padding: 45px; /* Larger padding for 4xl screens */
+    }
+  
+    .media-scroller img {
+      height: 175px; /* Larger height for 4xl screens */
+    }
+  
+    .scroll-button {
+      padding: 15px 15px; /* Larger padding for 4xl screens */
+      font-size: 7rem; /* Larger font size for 4xl screens */
+    }
+  }
+  

@@ -10,8 +10,11 @@
   opacity: 0.8;
 } */
 
-.appFooter{
-  position:fixed;
+/*remove this below*/
+/* Default styles */
+
+.appFooter {
+  position: fixed;
   right: 0;
   top: 15%;
   opacity: 0;
@@ -19,28 +22,28 @@
   transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
 
-.paragraphApp{
+.paragraphApp {
   color: var(--clr-rose);
 }
 
-.svgSideIcon{
-    position:fixed;
-    right: 0;
-    top:10%;
-    cursor: pointer;
-    background-color: #34353a;
-    border: none;
+.svgSideIcon {
+  position: fixed;
+  right: 0;
+  top: 10%;
+  cursor: pointer;
+  background-color: #34353a;
+  border: none;
   color: white;
   padding: 10px 30px;
-
-  svg {
-    width: 36px;
-    height: 36px;
-    fill: rgb(34, 203, 219);
-  }
 }
 
-.sideIconSection:hover  .appFooter{
+.svgSideIcon svg {
+  width: 36px;
+  height: 36px;
+  fill: rgb(34, 203, 219);
+}
+
+.sideIconSection:hover .appFooter {
   opacity: 1;
   visibility: visible;
   transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
@@ -52,9 +55,99 @@
   transition: opacity 1s ease-in-out 1s, visibility 1s ease-in-out 1s;
 }
 
-.imageGalleryContainer{
+.imageGalleryContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 4rem;
+}
+
+.footerSection{
+  width: 100%;
+}
+/* Media queries */
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .section {
+    margin-top: 10rem;
+  }
+
+  .appFooter {
+    top: 20%;
+  }
+
+  .svgSideIcon {
+    top: 15%;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+/* 3xl */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+
+  .appFooter {
+    top: 25%;
+  }
+
+  .svgSideIcon {
+    top: 20%;
+  }
+}
+
+/* 4xl */
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2560px;
+  }
+
+  .appFooter {
+    top: 30%;
+  }
+
+  .svgSideIcon {
+    top: 25%;
+  }
 }

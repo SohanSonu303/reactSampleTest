@@ -1,79 +1,534 @@
-.header__sectionDiv{
+
+   /* Default styles */
+/* Default styles */
+.header__sectionDiv {
     display: flex;
     justify-content: space-around;
-    gap: 40%;
-    width:100%;
-}
-
-.headerImage{
-    width: 3rem;
-    height: 3rem;
+    gap: 10%; /* Reduced default gap */
+    width: 100%;
+  }
+  
+  .headerImage {
+    width: 2rem; /* Reduced default size */
+    height: 2rem; /* Reduced default size */
     display: flex;
     border-radius: 50%;
     align-items: center;
     align-content: center;
-}
-
-.image__header{
+  }
+  
+  .image__header {
     display: flex;
-    gap: 1rem;
-    max-width: 30%;
+    gap: 0.5rem; /* Reduced default gap */
+    max-width: 50%; /* Adjusted max width */
     align-items: center;
     align-content: center;
-}
-
-.header__name{
+  }
+  
+  .header__name {
     display: flex;
     align-items: center;
     align-content: center;
-    font-size: xx-large;
+    font-size: medium; /* Reduced default font size */
     color: #ffc86b;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.unOrderedList{
+  }
+  
+  .unOrderedList {
     list-style-type: none;
     display: flex;
-    gap: 2rem;
-}
-
-.listElement{
-    color:   var( --clr-light);
-    font-size:larger;
+    gap: 0.5rem; /* Reduced default gap */
+  }
+  
+  .listElement {
+    color: var(--clr-light);
+    font-size: medium; /* Reduced default font size */
     font-weight: bold;
-}
-
-.name__header{
-  align-items: flex-start; 
-}
-
-.list__header{
+  }
+  
+  .name__header {
+    align-items: flex-start;
+  }
+  
+  .list__header {
     display: flex;
-    align-content:flex-start;
+    align-content: flex-start;
     justify-content: center;
-    align-items:center;
-    height:auto;
-    gap: 1rem;
-}
-
-a{
-    font-family:'Courier New', Courier, monospace;
-}
-
-.logoSvg{
+    align-items: center;
+    height: auto;
+    gap: 0.5rem; /* Reduced default gap */
+  }
+  
+  a {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .logoSvg {
     background-color: #34353a;
     border: none;
-  color: white;
-  padding: 10px 20px;
-
-  svg {
-    width: 24px;
-    height: 24px;
+    color: white;
+    padding: 5px 10px; /* Reduced padding */
+  }
+  
+  .logoSvg svg {
+    width: 20px; /* Reduced size */
+    height: 20px; /* Reduced size */
     fill: white;
   }
-}
-
-.listElement:hover {
+  
+  .listElement:hover {
     color: #ffc86b;
+  }
+  
+  /* Media queries */
+  /* 320px */
+@media (min-width: 320px) {
+    .header__sectionDiv {
+      gap: 12%; /* Adjusted gap for 320px */
+    }
+  
+    .headerImage {
+      width: 1.5rem; /* Adjusted size for 320px */
+      height: 1.5rem; /* Adjusted size for 320px */
+    }
+  
+    .image__header {
+      gap: 0.25rem; /* Adjusted gap for 320px */
+    }
+  
+    .header__name {
+      font-size: small; /* Adjusted font size for 320px */
+    }
+  
+    .unOrderedList {
+      gap: 0.75rem; /* Adjusted gap for 320px */
+    }
+  
+    .listElement {
+      font-size: small; /* Adjusted font size for 320px */
+    }
+  
+    .list__header {
+      gap: 0.25rem; /* Adjusted gap for 320px */
+    }
+  
+    .logoSvg {
+      padding: 3px 5px; /* Adjusted padding for 320px */
+    }
+  
+    .logoSvg svg {
+      width: 16px; /* Adjusted size for 320px */
+      height: 16px; /* Adjusted size for 320px */
+    }
+  }
+  
+  /* 375px */
+  @media (min-width: 375px) {
+    .header__sectionDiv {
+      gap: 10%; /* Adjusted gap for 375px */
+    }
+  
+    .headerImage {
+      width: 1.75rem; /* Adjusted size for 375px */
+      height: 1.75rem; /* Adjusted size for 375px */
+    }
+  
+    .image__header {
+      gap: 0.5rem; /* Adjusted gap for 375px */
+    }
+  
+    .header__name {
+      font-size: medium; /* Adjusted font size for 375px */
+    }
+  
+    .unOrderedList {
+      gap: 1rem; /* Adjusted gap for 375px */
+    }
+  
+    .listElement {
+      font-size: medium; /* Adjusted font size for 375px */
+    }
+  
+    .list__header {
+      gap: 0.5rem; /* Adjusted gap for 375px */
+    }
+  
+    .logoSvg {
+      padding: 5px 10px; /* Adjusted padding for 375px */
+    }
+  
+    .logoSvg svg {
+      width: 18px; /* Adjusted size for 375px */
+      height: 18px; /* Adjusted size for 375px */
+    }
+  }
+  
+  /* 420px */
+  @media (min-width: 420px) {
+    .header__sectionDiv {
+      gap: 8%; /* Adjusted gap for 420px */
+    }
+  
+    .headerImage {
+      width: 2rem; /* Adjusted size for 420px */
+      height: 2rem; /* Adjusted size for 420px */
+    }
+  
+    .image__header {
+      gap: 0.75rem; /* Adjusted gap for 420px */
+    }
+  
+    .header__name {
+      font-size: medium; /* Adjusted font size for 420px */
+    }
+  
+    .unOrderedList {
+      gap: 1.25rem; /* Adjusted gap for 420px */
+    }
+  
+    .listElement {
+      font-size: medium; /* Adjusted font size for 420px */
+    }
+  
+    .list__header {
+      gap: 0.75rem; /* Adjusted gap for 420px */
+    }
+  
+    .logoSvg {
+      padding: 7px 15px; /* Adjusted padding for 420px */
+    }
+  
+    .logoSvg svg {
+      width: 20px; /* Adjusted size for 420px */
+      height: 20px; /* Adjusted size for 420px */
+    }
+  }
+  
+  /* xs */
+  @media (min-width: 475px) {
+    .header__sectionDiv {
+      gap: 7%; /* Adjusted gap for xs */
+    }
+  
+    .headerImage {
+      width: 2.5rem; /* Adjusted size for xs */
+      height: 2.5rem; /* Adjusted size for xs */
+    }
+  
+    .image__header {
+      gap: 0.75rem; /* Adjusted gap for xs */
+    }
+  
+    .header__name {
+      font-size: medium; /* Adjusted font size for xs */
+    }
+  
+    .unOrderedList {
+      gap: 1rem; /* Adjusted gap for xs */
+    }
+  
+    .listElement {
+      font-size: medium; /* Adjusted font size for xs */
+    }
+  
+    .list__header {
+      gap: 0.75rem; /* Adjusted gap for xs */
+    }
+  
+    .logoSvg {
+      padding: 7px 15px; /* Adjusted padding for xs */
+    }
+  
+    .logoSvg svg {
+      width: 22px; /* Adjusted size for xs */
+      height: 22px; /* Adjusted size for xs */
+    }
+  }
+  
+  /* sm */
+  @media (min-width: 640px) {
+    .header__sectionDiv {
+      gap: 5%; /* Adjusted gap for sm */
+    }
+  
+    .headerImage {
+      width: 3rem; /* Adjusted size for sm */
+      height: 3rem; /* Adjusted size for sm */
+    }
+  
+    .image__header {
+      gap: 1rem; /* Adjusted gap for sm */
+    }
+  
+    .header__name {
+      font-size: large; /* Adjusted font size for sm */
+    }
+  
+    .unOrderedList {
+      gap: 1.5rem; /* Adjusted gap for sm */
+    }
+  
+    .listElement {
+      font-size: medium; /* Adjusted font size for sm */
+    }
+  
+    .list__header {
+      gap: 1rem; /* Adjusted gap for sm */
+    }
+  
+    .logoSvg {
+      padding: 10px 20px; /* Adjusted padding for sm */
+    }
+  
+    .logoSvg svg {
+      width: 24px; /* Adjusted size for sm */
+      height: 24px; /* Adjusted size for sm */
+    }
+  }
+  
+  /* md */
+  @media (min-width: 768px) {
+    .header__sectionDiv {
+      gap: 3%; /* Adjusted gap for md */
+    }
+  
+    .headerImage {
+      width: 3.5rem; /* Adjusted size for md */
+      height: 3.5rem; /* Adjusted size for md */
+    }
+  
+    .image__header {
+      gap: 1.25rem; /* Adjusted gap for md */
+    }
+  
+    .header__name {
+      font-size: larger; /* Adjusted font size for md */
+    }
+  
+    .unOrderedList {
+      gap: 2rem; /* Adjusted gap for md */
+    }
+  
+    .listElement {
+      font-size: medium; /* Adjusted font size for md */
+    }
+  
+    .list__header {
+      gap: 1.25rem; /* Adjusted gap for md */
+    }
+  
+    .logoSvg {
+      padding: 12px 25px; /* Adjusted padding for md */
+    }
+  
+    .logoSvg svg {
+      width: 26px; /* Adjusted size for md */
+      height: 26px; /* Adjusted size for md */
+    }
+  }
+  
+  /* lg */
+  @media (min-width: 1024px) {
+    .header__sectionDiv {
+      gap: 2%; /* Adjusted gap for lg */
+    }
+  
+    .headerImage {
+      width: 4rem; /* Adjusted size for lg */
+      height: 4rem; /* Adjusted size for lg */
+    }
+  
+    .image__header {
+      gap: 1.5rem; /* Adjusted gap for lg */
+    }
+  
+    .header__name {
+      font-size: large; /* Adjusted font size for lg */
+    }
+  
+    .unOrderedList {
+      gap: 2.5rem; /* Adjusted gap for lg */
+    }
+  
+    .listElement {
+      font-size: large; /* Adjusted font size for lg */
+    }
+  
+    .list__header {
+      gap: 1.5rem; /* Adjusted gap for lg */
+    }
+  
+    .logoSvg {
+      padding: 15px 30px; /* Adjusted padding for lg */
+    }
+  
+    .logoSvg svg {
+      width: 28px; /* Adjusted size for lg */
+      height: 28px; /* Adjusted size for lg */
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    .header__sectionDiv {
+      gap: 1%; /* Adjusted gap for xl */
+    }
+  
+    .headerImage {
+      width: 4.5rem; /* Adjusted size for xl */
+      height: 4.5rem; /* Adjusted size for xl */
+    }
+  
+    .image__header {
+      gap: 1.75rem; /* Adjusted gap for xl */
+    }
+  
+    .header__name {
+      font-size: larger; /* Adjusted font size for xl */
+    }
+  
+    .unOrderedList {
+      gap: 3rem; /* Adjusted gap for xl */
+    }
+  
+    .listElement {
+      font-size: large; /* Adjusted font size for xl */
+    }
+  
+    .list__header {
+      gap: 1.75rem; /* Adjusted gap for xl */
+    }
+  
+    .logoSvg {
+      padding: 18px 35px; /* Adjusted padding for xl */
+    }
+  
+    .logoSvg svg {
+      width: 30px; /* Adjusted size for xl */
+      height: 30px; /* Adjusted size for xl */
+    }
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+    .header__sectionDiv {
+      gap: 0.5%; /* Adjusted gap for 2xl */
+    }
+  
+    .headerImage {
+      width: 5rem; /* Adjusted size for 2xl */
+      height: 5rem; /* Adjusted size for 2xl */
+    }
+  
+    .image__header {
+      gap: 2rem; /* Adjusted gap for 2xl */
+    }
+  
+    .header__name {
+      font-size: x-large; /* Adjusted font size for 2xl */
+    }
+  
+    .unOrderedList {
+      gap: 3.5rem; /* Adjusted gap for 2xl */
+    }
+  
+    .listElement {
+      font-size: larger; /* Adjusted font size for 2xl */
+    }
+  
+    .list__header {
+      gap: 2rem; /* Adjusted gap for 2xl */
+    }
+  
+    .logoSvg {
+      padding: 20px 40px; /* Adjusted padding for 2xl */
+    }
+  
+    .logoSvg svg {
+      width: 32px; /* Adjusted size for 2xl */
+      height: 32px; /* Adjusted size for 2xl */
+    }
+  }
+  
+  /* 3xl */
+  @media (min-width: 1920px) {
+    .header__sectionDiv {
+      gap: 0.25%; /* Adjusted gap for 3xl */
+    }
+  
+    .headerImage {
+      width: 5.5rem; /* Adjusted size for 3xl */
+      height: 5.5rem; /* Adjusted size for 3xl */
+    }
+  
+    .image__header {
+      gap: 2.25rem; /* Adjusted gap for 3xl */
+    }
+  
+    .header__name {
+      font-size: xx-large; /* Adjusted font size for 3xl */
+    }
+  
+    .unOrderedList {
+      gap: 4rem; /* Adjusted gap for 3xl */
+    }
+  
+    .listElement {
+      font-size: x-large; /* Adjusted font size for 3xl */
+    }
+  
+    .list__header {
+      gap: 2.25rem; /* Adjusted gap for 3xl */
+    }
+  
+    .logoSvg {
+      padding: 22px 45px; /* Adjusted padding for 3xl */
+    }
+  
+    .logoSvg svg {
+      width: 34px; /* Adjusted size for 3xl */
+      height: 34px; /* Adjusted size for 3xl */
+    }
+  }
+  
+  /* 4xl */
+  @media (min-width: 2560px) {
+    .header__sectionDiv {
+      gap: 0.1%; /* Adjusted gap for 4xl */
+    }
+  
+    .headerImage {
+      width: 6rem; /* Adjusted size for 4xl */
+      height: 6rem; /* Adjusted size for 4xl */
+    }
+  
+    .image__header {
+      gap: 2.5rem; /* Adjusted gap for 4xl */
+    }
+  
+    .header__name {
+      font-size: xxx-large; /* Adjusted font size for 4xl */
+    }
+  
+    .unOrderedList {
+      gap: 4.5rem; /* Adjusted gap for 4xl */
+    }
+  
+    .listElement {
+      font-size: x-large; /* Adjusted font size for 4xl */
+    }
+  
+    .list__header {
+      gap: 2.5rem; /* Adjusted gap for 4xl */
+    }
+  
+    .logoSvg {
+      padding: 25px 50px; /* Adjusted padding for 4xl */
+    }
+  
+    .logoSvg svg {
+      width: 36px; /* Adjusted size for 4xl */
+      height: 36px; /* Adjusted size for 4xl */
+    }
   }
   
