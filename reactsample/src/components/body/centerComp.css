@@ -98,18 +98,22 @@
 
 .bodyAnimationSec {
     display: flex;
-    align-content: space-evenly;
     gap: 3rem;
+    align-items: center;
     justify-content: center;
-    width: 80%;
+    align-content: center;
+    width: 100%;
     opacity: 0; /* Start hidden */
     transform: translateY(150px); /* Start below */
-    transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
 .bodyAnimationSec.visible {
     display: flex;
-    align-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     gap: 3rem;
     opacity: 1;
     transform: translateY(0);
@@ -117,8 +121,8 @@
 
 .bodyimageAni{
     opacity: 0; /* Start hidden */
-    transform: scale(0.95); /* Start scaled down */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: scale(0.2); /* Start scaled down */
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     max-height: 30rem;
     max-width: 30rem;
     display: flex;
@@ -134,59 +138,40 @@
     transform: scale(1); /* Scale to original size */
 }
 
-.p-tags {
+.p-tags{
     position: relative;
     z-index: 1;
     opacity: 0; /* Start hidden */
-    transform: translateY(50px); /* Start below */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transform: scale(0.2); /* Start below */
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
   }
   
   .p-tags.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: Xx-large;
     color: #b21f48;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .biggertextSec{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin: 5rem;
+    align-content: center;    
+    align-items:center;
+    margin: 3rem;
   }
 
-  .p-tag-1 { color: #FF6347; font-size: 5rem; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;} /* Tomato */
-.p-tag-2 { color: #4682B4; font-size: 5rem;font-family: fantasy;} /* Steel Blue */
-.p-tag-3 { color: #32CD32; font-size: 5rem; font-family:Georgia, 'Times New Roman', Times, serif;} /* Lime Green */
-.p-tag-4 { color: #FFD700; font-size: 5rem; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;} /* Gold */
-.p-tag-5 { color: #8A2BE2; font-size: 5rem; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+  .p-tag-1 { color: #FF6347; font-size: 3rem; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;} /* Tomato */
+.p-tag-2 { color: #4682B4; font-size: 3rem;font-family: fantasy;} /* Steel Blue */
+.p-tag-3 { color: #32CD32; font-size: 3rem; font-family:Georgia, 'Times New Roman', Times, serif;} /* Lime Green */
+.p-tag-4 { color: #FFD700; font-size: 3rem; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;} /* Gold */
+.p-tag-5 { color: #8A2BE2; font-size: 3rem; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
 
-.autoBlur{
-    animation: autoBlurAni linear both;
-    animation-timeline:  view();
-}
-
-
-
-@keyframes autoBlurAni {
-    0%{
-        filter: blur(40px);
-    }
-    45%,55%{
-        filter: blur(0px);
-    }
-    100%{
-        filter: blur(40px);
-    }
-    
+.textSecInnnerdiv{
+    display: flex;
+    justify-content:space-around;
+    align-content: space-evenly;
 }

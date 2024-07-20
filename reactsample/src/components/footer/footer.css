@@ -1,0 +1,17 @@
+.footerMainDiv{
+    margin-top: 10rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    align-content: space-around;
+}
+
+.aniamtionFooter{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    gap: 2rem;
+}

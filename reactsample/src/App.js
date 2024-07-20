@@ -5,6 +5,7 @@ import CenterComponent from './components/body/CenterComponent'
 import SimpleBottomNavigation from './components/footerObject/SimpleBottomNavigation'
 import ImageGallery from './components/body/ImageGallery';
 import LottieAnimation from './components/animations/LottieAnimation';
+import Footer from './components/footer/Footer';
 
 function App() {
 
@@ -51,7 +52,7 @@ function App() {
                     </section>
 
                     <footer> 
-                      
+                      <Footer></Footer>
                     </footer>
               </div>
       }

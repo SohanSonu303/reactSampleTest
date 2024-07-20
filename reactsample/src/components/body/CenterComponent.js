@@ -10,7 +10,7 @@ function CenterComponent(){
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.intersectionRatio > 0.1) {
+                if (entry.intersectionRatio > 0.5) {
                     setIsVisible(true);
                 } else {
                     setIsVisible(false);
@@ -29,7 +29,7 @@ function CenterComponent(){
                 observer.unobserve(animElementRef.current);
             }
         };
-    }, []);
+    },[]);
 
      return(
         <div className='body__MainSection'>
@@ -68,14 +68,36 @@ function CenterComponent(){
                                 </p>
                             </div>
                 </div>
+            
+            {/* <div className='biggertextSec'>
+                <div className='textSecInnnerdiv'>
+                    <p className="autoBlur p-tag-1">Innovative</p>
+                    <p className='autoBlurText'>"Innovative design is at the heart of every architectural masterpiece. It's about pushing boundaries, embracing new technologies, and creating spaces that inspire and transform the way we live and work."</p>
+                </div>
 
-            <div className='biggertextSec'>
-                <p className="autoBlur p-tag-1">Innovative</p>
-                <p className="autoBlur p-tag-2">Personalized</p>
-                <p className="autoBlur p-tag-3">Limitless</p>
-                <p className="autoBlur p-tag-4">Discover</p>
-                <p className="autoBlur p-tag-5">Pioneering</p>
-            </div>
+                <div className='textSecInnnerdiv'>
+                    <p className="autoBlur p-tag-2">Personalized</p>
+                    <p className='autoBlurText'>"Personalized architecture ensures that each structure resonates with the unique needs and aspirations of its occupants. From bespoke interiors to tailored spatial arrangements, it's all about creating a perfect harmony between functionality and individuality."</p>
+                </div>
+
+                <div className='textSecInnnerdiv'>
+                    <p className="autoBlur p-tag-3">Limitless</p>
+                    <p className='autoBlurText'>"Architectural creativity knows no bounds. With limitless possibilities, we can reimagine urban landscapes, defy gravity with soaring skyscrapers, and craft environments that are as dynamic and diverse as the people who inhabit them."</p>
+                </div>
+
+                <div className='textSecInnnerdiv'>
+                    <p className="autoBlur p-tag-4">Discover</p>
+                    <p className='autoBlurText'>"Architecture is a journey of discovery. Each project unveils new challenges and opportunities, inviting us to explore innovative solutions and uncover the hidden potential within every site."</p>
+                </div>
+
+               <div className='textSecInnnerdiv'>
+                    <p className="autoBlur p-tag-5">Pioneering</p>
+                    <p className='autoBlurText'>"Pioneering architecture leads the way for future generations. By integrating sustainable practices, cutting-edge technologies, and visionary design, we shape the world of tomorrow, setting new standards for excellence and creativity."</p>
+                </div>
+                
+            </div> */}
+            
+
             <div className='projectDesc'>
                 <div className='projectDesc1'>
                     <p className='body__paraTagDesc'>
