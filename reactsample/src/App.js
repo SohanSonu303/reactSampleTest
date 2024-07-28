@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef  } from 'react';
 import './App.css';
 import HeaderNavgation from './components/topNavComponent/HeaderNavigation'
 import CenterComponent from './components/body/CenterComponent'
@@ -12,11 +12,13 @@ function App() {
       const[isClicked,setIsClicked] = useState(false)
 
       const [loading, setLoading] = useState(true);
-
+      const bodySectionRef = useRef(null);
+      const ProjectSectionRef = useRef(null);
+      const contactSectionRef = useRef(null);
       useEffect(() => {
         setTimeout(() => {
           setLoading(false);
-        }, 3000); // Simulate a network request or some async operation
+        }, 2000); // Simulate a network request or some async operation
       }, []);
 
       
@@ -25,6 +27,25 @@ function App() {
         console.log(isClicked)
       }
 
+      const scrollToSection = () => {
+        if (bodySectionRef.current) {
+          bodySectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+      const scrollToProjectSection = () => {
+        if (ProjectSectionRef.current) {
+          ProjectSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+
+      const scrollToContactSection = () => {
+        if (contactSectionRef.current) {
+          contactSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
   return (
     <div className="App">
       {
@@ -32,13 +53,14 @@ function App() {
               <div className="App">
                     {/* <img className='background_land' src='/landscape.jpg' alt ="landscape"></img> */}
                     <section>
-                      <HeaderNavgation></HeaderNavgation>
+                      <HeaderNavgation   scrollToAbout={() => scrollToSection(bodySectionRef)} scrollToProject={() => scrollToProjectSection(ProjectSectionRef)}
+                                          scrollToContact={() => scrollToContactSection(contactSectionRef)} ></HeaderNavgation>
                     </section>
                     <section>
-                      <CenterComponent></CenterComponent>
+                      <CenterComponent ref={bodySectionRef} ></CenterComponent>
                     </section>
 
-                    <section className='imageGalleryContainer'>
+                    <section className='imageGalleryContainer' ref={ProjectSectionRef} >
                       <ImageGallery></ImageGallery>
                     </section>
 
@@ -51,7 +73,7 @@ function App() {
                       </section>
                     </section>
 
-                    <footer className='footerSection'> 
+                    <footer className='footerSection'  ref={contactSectionRef}> 
                       <Footer></Footer>
                     </footer>
               </div>

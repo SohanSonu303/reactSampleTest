@@ -2,7 +2,7 @@ import React from 'react';
 import './nav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function HeaderNavgation(){
+function HeaderNavgation({ scrollToAbout, scrollToContact, scrollToProject}){
     return (
         <section className='header__sectionDiv'>
             <section className='image__header'>
@@ -14,9 +14,9 @@ function HeaderNavgation(){
             </section>
             <section className='list__header'>
                 <ul className='unOrderedList'>
-                    <li><a className='listElement firstLI' >About</a></li>
-                    <li><a className='listElement secondLI' >Projects</a></li>
-                    <li><a className='listElement thirdLI' >Contact</a></li>
+                    <li><a className='listElement firstLI'  onClick={scrollToAbout} >About</a></li>
+                    <li><a className='listElement secondLI' onClick={scrollToProject} >Projects</a></li>
+                    <li><a className='listElement thirdLI' onClick={scrollToContact}>Contact</a></li>
                 </ul>
                 
             </section>

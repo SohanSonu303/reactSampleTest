@@ -69,6 +69,24 @@
 /* Media queries */
 
 /* xs */
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+}
+
 @media (min-width: 475px) {
   .container {
     max-width: 475px;

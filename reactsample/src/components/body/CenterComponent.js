@@ -102,7 +102,7 @@ function CenterComponent(){
                 <div className='projectDesc1'>
                     <p className='body__paraTagDesc'>
                     The building showcases a contemporary architectural style with clean lines and a minimalist design.<br></br>
-                    The façade is constructed with grey bricks, complemented by large, rectangular windows that allow ample natural light to penetrate the interior.<br></br>
+                    allow ample natural light to penetrate the interior.<br></br>
                     </p>
                     <div>
                         <img src='./belowpic2.jpg' className='bodyimageDesc'>
@@ -117,7 +117,7 @@ function CenterComponent(){
                     <div>
                         <p className='body__paraTagDesc'>
                         The staircase features a sleek and modern design with wooden steps and black metal railings, combining natural elements with industrial materials.<br></br>
-                        The vertical light fixtures with wooden bulb casings add a warm ambiance and create an interesting focal point.<br></br>
+                        create an interesting focal point.<br></br>
                         </p>    
                     </div>
                 </div>

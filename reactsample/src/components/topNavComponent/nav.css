@@ -44,6 +44,7 @@
     color: var(--clr-light);
     font-size: medium; /* Reduced default font size */
     font-weight: bold;
+    cursor: pointer;
   }
   
   .name__header {
@@ -105,6 +106,7 @@
     }
   
     .listElement {
+      visibility: hidden;
       font-size: small; /* Adjusted font size for 320px */
     }
   
@@ -146,6 +148,7 @@
     }
   
     .listElement {
+      visibility: hidden;
       font-size: medium; /* Adjusted font size for 375px */
     }
   
@@ -187,6 +190,7 @@
     }
   
     .listElement {
+      visibility: hidden;
       font-size: medium; /* Adjusted font size for 420px */
     }
   
@@ -228,6 +232,7 @@
     }
   
     .listElement {
+      visibility: hidden;
       font-size: medium; /* Adjusted font size for xs */
     }
   
@@ -269,6 +274,7 @@
     }
   
     .listElement {
+      visibility:visible;
       font-size: medium; /* Adjusted font size for sm */
     }
   
@@ -310,6 +316,7 @@
     }
   
     .listElement {
+      visibility:visible;
       font-size: medium; /* Adjusted font size for md */
     }
   
@@ -351,6 +358,7 @@
     }
   
     .listElement {
+      visibility:visible;
       font-size: large; /* Adjusted font size for lg */
     }
   
@@ -392,6 +400,7 @@
     }
   
     .listElement {
+      visibility:visible;
       font-size: large; /* Adjusted font size for xl */
     }
   
@@ -433,6 +442,7 @@
     }
   
     .listElement {
+      visibility:visible;
       font-size: larger; /* Adjusted font size for 2xl */
     }
   
@@ -474,6 +484,7 @@
     }
   
     .listElement {
+      visibility:visible;
       font-size: x-large; /* Adjusted font size for 3xl */
     }
   
@@ -515,6 +526,7 @@
     }
   
     .listElement {
+      visibility:visible;
       font-size: x-large; /* Adjusted font size for 4xl */
     }
   
